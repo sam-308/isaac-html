@@ -1,0 +1,473 @@
+:root{
+    --pink:#fd7fbe;
+    --pink2: #fcacd4;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 65.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 1.5rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 900;
+    box-shadow: 0 .3rem .5rem rgb(100, 100, 100);
+}
+
+header .logo{
+    font-size: 2rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+header.icons a{
+    font-size: 4rem;
+    padding: 0 2rem;
+    color: #666;
+}
+
+
+header .icons a:hover{
+    color: var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 2.5rem;
+    color: #333;
+    border-radius: 2rem;
+    padding: 3rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*----home----*/
+section{
+    padding: 2rem 9%;
+}
+
+.home{
+    background-image: url(images/back1.1.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-container{
+    min-height: 100vh;
+    max-width:  100%;
+    margin: auto;
+    padding: 25rem;
+    padding-left: 0;
+    
+    letter-spacing: 2px;   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.home-container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-container .content .subtitle{
+    letter-spacing: 2px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.home-container .content .title{
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.home-container .content .title span{
+    font-weight: 600;
+    color: #ff93c9;
+}
+
+.description{
+    line-height: 1.5rem;
+    color: #4e4e4e;
+    margin-bottom: 2rem;
+}
+
+.action-buttons{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #eee;
+    outline: none;
+}
+
+
+/*-------about me-------*/
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    padding: .3rem;
+    margin: 2rem 0;
+    background: #fcc7e2;
+    box-shadow: 0 .3rem 1rem #727272;
+}
+
+.heading span{
+    color: #333;
+}
+
+.aboutme .row{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+    padding-bottom: 3rem;
+    
+}
+
+.aboutme .row .image-container{
+    flex: .3 .5 20rem;
+    position: relative;
+    padding-left: 10rem;   
+    
+}
+
+.aboutme .row .image-container image{
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1 );
+}
+
+
+.aboutme .content{
+    flex: .5 1 25rem;
+}
+
+.aboutme .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+
+.aboutme .row .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+/*-----about me ends-----*/
+
+/*------blog start------*/
+
+
+.blog .heading{
+    background-color: #fff;
+    box-shadow: none;
+    font-size: 5rem;
+    color: var(--pink);
+    padding: .3rem;
+    margin: 2rem 0;
+}
+
+.container{
+    width: 100%;
+}
+
+.blog .container .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.blog .container .content .card{
+    flex: 1;
+    margin: 50px 20px;
+    box-shadow: 0 0 5px 0 #7a7a7a;
+    background-color: #ffe2f1;
+
+}
+.blog .container .content .card img{
+    height: auto;
+    width: 100%;
+}
+
+.blog .container .content .card h4{
+    color: #292929;
+    margin: 5px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.blog .container .content .card span{
+    font-size: 1.2rem;
+    color: #666;
+    align-items: justify;
+    padding-left: 1rem;
+}
+
+.blog .container .content .card p{
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+    padding: 10px;
+    text-align: justify;
+
+}
+
+.blog .container .content .card a{
+    font-size: 15px;
+    color: #666;
+    text-align: center;
+    margin: 5px;
+}
+
+.blog .container .content .card a:hover{
+    color: #fd7fbe;
+}
+
+
+/*------kpop-----*/
+
+
+.kpop{
+    background-color: #ffeef7;
+}
+
+
+.kpop .heading{
+    font-size: 5rem;
+    padding: .3rem;
+    background-color: #ffeef7;
+    box-shadow: none;
+    color: #fd7fbe;
+}
+
+.kpop.container{
+    width: 100%;
+}
+
+.kpop .container .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.kpop .container .content .card{
+    flex: 2;
+    margin: 60px 30px;
+
+}
+.kpop .container .content video{
+    height: auto;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.kpop .container .content video a{
+    width: 100%;
+}
+
+.kpop .container .content h2{
+    text-align: center;
+    color: #333;
+}
+
+.kpop .container .content p{
+    text-align: center;
+}
+
+.kpop .container .content p a{
+    color: #fcacd4;
+}
+
+
+/*----footer---*/
+
+
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.footercontainer h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #333;
+    opacity: 1;
+}
+
+.socialicons a:hover{
+    color: #fcacd4;
+}
+
+.footernav{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.footernav a{
+    color: #333;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+
+.footernav a:hover{
+    color: #fcacd4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------media queries-----*/
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    header{
+        padding: 2rem;
+    }
+    
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: center;
+
+    }    
+}
+
+@media (max-width:765px){
+
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .3rem solid #333;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background-image: #fff;
+        border: .3rem solid #333;
+        display: block;
+        border-radius: 4rem;
+        text-align: center;
+        text-decoration: solid;
+    }
+
+    .home-container{
+        padding: 10rem 1rem 5rem 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog .container .content{
+        flex-direction: column;
+    }
+
+    .kpop .container .content{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+
+}
